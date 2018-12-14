@@ -1,1 +1,1 @@
-# AJAX-CRUD-Application
+An onpage CRUD application (Add, Update, Delete functionalities) using PHP,AJAX.
