@@ -91,16 +91,18 @@
 
 		});
 
-		$(document).on('click','.update', function(){
+		$(document).on('click', '.update', function(){
 			var id = $(this).attr("id");
 			$.ajax({
-				url : "fetch.php",
+				url: "fetch.php",
 				method:"POST",
-				data:{id;id},
+				data:{id:id},
 				dataType:"json",
 				success:function(data){
 					$('#action').text("Edit");
 					$('#user_id').val(id);
+					$('#first_name').val(data.first_name);
+					$('#last_name').val(data.last_name);
 				}
 			})
 		});
